@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         const task = doc.data()
         taskForm['task-title'].value = task.title
         taskForm['task-description'].value = task.description
-        taskForm['btn-task-save'].innerText = 'Update'
+        taskForm['btn-task-form'].innerText = 'Update'
         editStatus = true
         id = doc.id
       })
@@ -81,7 +81,7 @@ taskForm.addEventListener('submit', (e) => {
       title: title.value,
       description: description.value,
     })
-    taskForm['btn-task-save'].innerText = 'Update'
+    taskForm['btn-task-form'].innerText = 'Update'
     editStatus = false
   }
 
